@@ -183,20 +183,6 @@ function Barra() {
           </ListItem>
           <ListItem
             button
-            selected={pathName === "/plataforma/favoritos"}
-            onClick={() => {
-              navigate("/plataforma/favoritos");
-            }}
-          >
-            <IconContext.Provider value={{ color: "#7A04EB", size: "1.4em" }}>
-              <AiFillStar />
-            </IconContext.Provider>
-            <ListItemText className="list_item_text">
-              <Typography>FAVORITOS</Typography>
-            </ListItemText>
-          </ListItem>
-          <ListItem
-            button
             selected={pathName === "/plataforma/maisjogados"}
             onClick={() => {
               navigate("/plataforma/maisjogados");
