@@ -1,13 +1,33 @@
 /* eslint-disable no-unused-vars */
 import "./login.css";
-import React, { useState } from "react";
+import React, {useState } from "react";
 import { useNavigate } from "react-router-dom";
+import api from "../../services/api";
+import { login } from "../../services/auth";
 
 function Login() {
+
   const navigate = useNavigate();
   const [email, setEmail] = useState();
-  // eslint-disable-next-line no-unused-vars
-  const [password, setPassword] = useState();
+  const [senha, setPassword] = useState();
+
+  async function handleLogin(e){
+    e.preventDefault();
+    try {
+      const response = await api.post('/login', {email,senha});
+      alert("Bem vindo(a)", response.data.user.name);
+      login(response.data.accessToken);
+      navigate("/plataforma");
+    } catch (error) {
+      if(error.response === 403){
+        alert("Credenciais inválidas");
+      }
+      else{
+        alert(error.response.data.notification);
+      }
+      console.warn(error);
+    }
+  }
 
   return (
     <div className="background_login">
@@ -44,9 +64,7 @@ function Login() {
           <br />
           <button
             class="button"
-            onClick={() => {
-              navigate("/plataforma");
-            }}
+            onClick={handleLogin}
           >
             ENTRAR
           </button>

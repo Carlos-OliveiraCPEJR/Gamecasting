@@ -12,7 +12,7 @@ module.exports = {
             try {
                 firebaseId = await Firebase.login(email, senha);
             } catch (error) {
-                return response.status(403).json({notification: "Invalide Credentials"})
+                return response.status(403).json({notification: "Credenciais Inválidas"})
             }
 
             const user = await UserModel.getByFields({firebase_id: firebaseId});

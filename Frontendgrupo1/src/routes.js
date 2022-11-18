@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes,/*redirect*/} from "react-router-dom";
 
 import Cadastro from "./Pages/Cadastro";
 import Home from "./Pages/Home";
@@ -13,15 +13,26 @@ import Lancamentos from "./Pages/Plataforma/Lancamentos";
 import MaisJogados from "./Pages/Plataforma/Maisjogados";
 import Recomendados from "./Pages/Plataforma/Recomendados";
 import Footer from "./Pages/Footer"; 
+//import {isAuthenticated} from "./services/auth";
+//import { Menu, Switch } from "@mui/material";
 
-
-//import { Switch } from "@mui/material";
+/*const PrivateRoute = ({component: Component, ...rest}) => (
+    <Route
+        {...rest}
+        render = {(props) =>
+        isAuthenticated() ? (
+            <Component {...props}/>
+        ) : (redirect ("/login") 
+        )
+    }
+ />
+);*/
 
     function Rotas(){
         return(
             <BrowserRouter>
             <Routes>
-                <Route path="/" element ={<Home />}/>
+                <Route path="/" element ={<Home/>}/>
                 <Route path="/cadastro" element ={<Cadastro />} />
                 <Route path="/home" element ={<Home />}/>
                 <Route path="/footer" element ={<Footer />}/>
@@ -38,4 +49,5 @@ import Footer from "./Pages/Footer";
             </BrowserRouter>
         )
     }
+
 export default Rotas;
