@@ -522,6 +522,7 @@ letter-spacing: 8px; word-spacing: 5px;
 }
 
 .quadradoFeedbacks {
+  background-color: #fff;
   border-radius: 25px;
   width: 1500px;
   height: 400px;
@@ -532,7 +533,7 @@ letter-spacing: 8px; word-spacing: 5px;
 .tituloDoFeedback {
   width: 58%;
   margin: auto;
-  align-items: center;
+  margin-left: 470px;
 }
 
 .vejaFeedback {
@@ -2102,5 +2103,41 @@ letter-spacing: 8px; word-spacing: 5px;
 
   .espacoAbaixoNulo {
     height: 500px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .crash4 {
+    size: 80%;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .headerhome {
+    display: flex;
+    flex-direction: column;
+  }
+  .quadradoCinza {
+    max-width: 200px;
+  }
+  .crash4 {
+    padding-right: 0;
+  }
+  .elipseFarCry {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .quadradoRoxoCentral {
+    max-width: 80%;
+    max-height: 80%;
+    size: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .retânguloCinzaAbaixo {
+    max-width: 50%;
   }
 }
