@@ -63,27 +63,30 @@ function Usuario() {
 
           <div class="jogosRecentes">
             <div className="titulojogosRecentes">
-              <h3>Amigos Online</h3>
+              <h3>Jogos favoritos</h3>
             </div>
             <div className="grupojogos">
-              <div class="Quadrado-amigos">
-                <div class="ImagemPerfilAmigo" />
-                <div class="TextoPerfilAmigo">
-                  <NomeDoUsuario />
-                </div>
+              <div className="jogouser">
+                {" "}
+                <img src="./images/ESO.png" alt="ESO" />
+                <p className="titulo">The Elden Ring</p>
               </div>
-              <div class="Quadrado-amigos">
-                <div class="ImagemPerfilAmigo" />
-                <div class="TextoPerfilAmigo">
-                  <NomeDoUsuario />
-                </div>
+              <div className="jogouser">
+                {" "}
+                <img src="./images/Jogo.png" alt="WOW" />
+                <p className="titulo">Skyrim</p>
               </div>
-              <div class="Quadrado-amigos">
-                <div class="ImagemPerfilAmigo">
-                  <div class="TextoPerfilAmigo">
-                    <NomeDoUsuario />
-                  </div>
-                </div>
+
+              <div className="jogouser">
+                {" "}
+                <img src="./images/Jogo 3.png" alt="GW2" />
+                <p className="titulo">Minecraft</p>
+              </div>
+
+              <div className="jogouser">
+                {" "}
+                <img src="./images/image 37.png" alt="Diablo" />
+                <p className="titulo">FarCry 6  </p>
               </div>
             </div>
           </div>
@@ -96,7 +99,7 @@ function Usuario() {
 
 function NomeDoUsuario() {
   //implementação de backend nao feita
-  return "Não Encontrado";
+  return "FLuis12";
 }
 
 /*function GetJogosRecentes() {

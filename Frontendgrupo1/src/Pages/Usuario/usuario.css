@@ -1,11 +1,11 @@
 .Background-Usuario {
   background: linear-gradient(
       180deg,
-      rgba(103, 8, 237, 0.152) 2.99%,
+      rgba(103, 8, 237, 0.534) 2.99%,
       rgba(245, 189, 240, 0.5) 22.81%,
       rgba(208, 175, 239, 0.8) 47.29%,
       rgba(132, 41, 253, 0.507585) 84.79%,
-      rgba(73, 1, 174, 0.214) 99.9%
+      rgba(73, 1, 174, 0.501) 99.9%
     )
     no-repeat fixed center center;
   height: 100%;

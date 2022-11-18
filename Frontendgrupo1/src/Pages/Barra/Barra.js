@@ -84,7 +84,7 @@ function Barra() {
     },
   }));
 
-  const [user, setUser] = useState({ nome: "User" });
+  const [user, setUser] = useState({ nome: "" });
 
   return (
     <>
@@ -116,7 +116,7 @@ function Barra() {
                 navigate("/usuario");
               }}
             >
-              <Avatar alt={user.nome} src="/images/Avatar.png" />
+              <Avatar alt={user.nome} src="/images/Avatar1.png" />
             </div>
             <div
               className="logout"
