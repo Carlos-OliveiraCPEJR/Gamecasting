@@ -45,9 +45,9 @@ module.exports = {
 
     async update (request, response){
         try{
-            const {user_id} = request.params;
+            const {plano} = request.params;
             const user = request.body;
-            await UserModel.updateById(user_id, user);
+            await UserModel.updateByPlano(plano, user);
 
             return response.status(200).json({notification: "User updated sucessfully"});
 

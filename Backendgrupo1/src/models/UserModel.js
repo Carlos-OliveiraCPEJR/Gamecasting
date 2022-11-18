@@ -26,8 +26,8 @@ module.exports = {
         return result;
     },
 
-    async updateById (user_id, user){
-        const result = await connection("user").where({user_id}).update(user);
+    async updateByPlano (plano, user){
+        const result = await connection("user").where({plano}).update(user);
         return result;
     },
 

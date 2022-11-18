@@ -96,7 +96,7 @@ function Plataforma() {
             <div className="jogo">
               {" "}
               <img src="./images/Jogo.png" alt="Skyrim" />
-              <p className="titulo">Skyrim V</p>
+              <p className="titulo">Skyrim</p>
             </div>
 
             <div className="jogo">
@@ -124,7 +124,7 @@ function Plataforma() {
             <div className="jogouser">
               {" "}
               <img src="./images/ESO.png" alt="ESO" />
-              <p className="titulo">The Elden Ring</p>
+              <p className="titulo">The Elder Scrolls Online</p>
             </div>
 
             <div className="jogo">

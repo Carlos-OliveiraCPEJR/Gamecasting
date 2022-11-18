@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import api from "../../services/api";
 import "./cadastro.css";
 
 function Cadastro() {
@@ -9,8 +10,24 @@ function Cadastro() {
   const [name, setName] = useState();
   const [user, setUser] = useState();
   const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [senha, setPassword] = useState();
 
+  async function criarUsuario(){
+    const CadastroUsuario = {
+      nome: name,
+      username: user,
+      email: email,
+      senha: senha,
+      plano: 3
+    }
+      try {
+        const response = api.post('/user',CadastroUsuario);
+        console.log(response);
+        
+      } catch (error) {
+        console.warn(error);
+      }
+  }
   return (
     <div className="background_cadastro">
       <div className="base">
@@ -51,7 +68,7 @@ function Cadastro() {
             <br />
             <label for="senhacadastro">Senha</label>
             <input
-              type="text"
+              type="password"
               itemID="senhacadastro"
               placeholder="Senha"
               onChange={(e) => setPassword(e.target.value)}
@@ -59,10 +76,17 @@ function Cadastro() {
             <br />
             <label for="confirmesenhacadastro">Confirme sua Senha</label>
             <input
-              type="text"
+              type="password"
               itemID="confirmesenhacadastro"
               placeholder="Confirmar senha"
             />
+            <br />
+            <button
+              class="button"
+              onClick={() => criarUsuario()}
+            >
+              CONFIRMAR
+            </button>
             <br />
             <button
               class="button"

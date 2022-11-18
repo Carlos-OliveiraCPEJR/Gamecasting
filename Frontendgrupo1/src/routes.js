@@ -14,7 +14,7 @@ import MaisJogados from "./Pages/Plataforma/Maisjogados";
 import Recomendados from "./Pages/Plataforma/Recomendados";
 import Footer from "./Pages/Footer"; 
 //import {isAuthenticated} from "./services/auth";
-//import { Menu, Switch } from "@mui/material";
+
 
 /*const PrivateRoute = ({component: Component, ...rest}) => (
     <Route

@@ -29,6 +29,7 @@ import { useNavigate } from "react-router-dom";
 //import {Button} from 'react-bootstrap';
 
 function Barra() {
+
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location.pathname);
@@ -83,7 +84,7 @@ function Barra() {
     },
   }));
 
-  const [user, setUser] = useState({ nome: "Josh" });
+  const [user, setUser] = useState({ nome: "User" });
 
   return (
     <>
@@ -212,7 +213,7 @@ function Barra() {
       </Drawer>
     </>
   );
-}
+          }
 
 /*<div className="searchbar">
             <Search>
