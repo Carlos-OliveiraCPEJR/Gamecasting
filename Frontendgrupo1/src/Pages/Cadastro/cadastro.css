@@ -1,0 +1,25 @@
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+  }
+
+.base{ 
+    overflow: auto;
+}
+.container_login img{
+    max-width: 300px;
+}
+.background_cadastro{
+    background: linear-gradient(180deg, rgba(104, 8, 237, 0.572344) 2.99%, rgba(245, 189, 240, 0.5) 22.81%, rgba(214, 199, 228, 0.8) 47.29%, rgba(132, 41, 253, 0.507585) 84.79%, rgba(7, 0, 88, 0.91) 99.9%) no-repeat fixed center center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.base{
+    height: auto;
+}
+.table{
+    align-items: center;
+    justify-items: center   ;
+}

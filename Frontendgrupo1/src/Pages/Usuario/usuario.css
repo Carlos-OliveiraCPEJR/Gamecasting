@@ -1,0 +1,230 @@
+.Background-Usuario {
+  background: linear-gradient(
+      180deg,
+      rgba(103, 8, 237, 0.152) 2.99%,
+      rgba(245, 189, 240, 0.5) 22.81%,
+      rgba(208, 175, 239, 0.8) 47.29%,
+      rgba(132, 41, 253, 0.507585) 84.79%,
+      rgba(73, 1, 174, 0.214) 99.9%
+    )
+    no-repeat fixed center center;
+  height: 100%;
+  width: auto;
+}
+
+.containerGeral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.logouser{
+  margin-top: 15px;
+  display: flex;
+}
+.logouser a img {
+  max-width: 300px;
+  align-items: flex-start;
+}
+.userBlock {
+  box-sizing: border-box;
+  background: rgba(160, 23, 214, 0.8);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+  width: 90%;
+  height: 150px;
+  border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    #8d05dcd3 2.99%,
+    rgba(83, 1, 196, 0.325) 52.4%,
+    rgba(116, 4, 235, 0.312) 99.9%
+  );
+}
+
+
+
+.userBottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-Usuario {
+  display: block;
+  top: 40px;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.NomedoUsuario-Usuario {
+  position: relative;
+  width: 400px;
+  height: 31px;
+
+  font-family: "Iceland";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 31px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.jogosRecentes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 7%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background: linear-gradient(
+    180deg,
+    #a100ff58 2.99%,
+    rgba(71, 4, 165, 0) 52.4%,
+    rgba(112, 4, 235, 0.138) 99.9%
+  );
+}
+
+.jogosRecentes img {
+  max-width: 30%;
+  height: fit-content;
+}
+
+.titulojogosRecentes {
+  text-align: center;
+}
+
+.grupojogos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.jogouser{
+  font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #c8c4cb1d;
+  border-style: groove;
+  border-color: #4f009820;
+  border-radius: 10px;
+  box-shadow: #000000;
+  height: 25%;
+
+}
+
+.jogouser p{
+  margin-top: 5px;
+}
+.jogouser:hover{
+  border:2px solid #9e03ff;
+}
+
+.jogouser .titulo{
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.Texto-Jogos-Usuario {
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+}
+
+.containerAmigos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: cadetblue;
+  height: auto;
+}
+
+.body-Amigos {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  border-style: solid;
+  border-width: 2px;
+  margin-bottom: 15px;
+
+  background: linear-gradient(
+    180deg,
+    #39045850 2.99%,
+    rgba(71, 4, 165, 0.13) 52.4%,
+    rgba(4, 8, 235, 0.15) 99.9%
+  );
+}
+
+
+.Quadrado-amigos {
+
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-width: 2px;
+
+  background-color: #7a04eb;
+}
+
+.ImagemPerfilAmigo {
+  width: 61px;
+  height: 61px;
+  left: 20px;
+  top: 18px;
+}
+
+.TextoPerfilAmigo {
+  position: absolute;
+  top: 80px;
+  left: 12px;
+  font-size: 12px;
+}
+
+.button-1-Usuario {
+  background-color: #680468;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  top: 35%;
+  left: 12px;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #520286;
+}
